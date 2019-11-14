@@ -1,9 +1,16 @@
-How do Conan or vcpck handle compatibility schemes?
+How do Conan or vcpkg handle compatibility schemes?
 ===================================================
 
 How does a package specify to which other versions of itself it is compatible?
 Is it possible to provide an exact list of compatible versions instead of semver rules or ranges?
+Are their any other common formats of specifying dependencies and compatibilites in the C++ world?
 
+
+I think that a fully automated solution would require a format that allows to specify a list of compatible versions for each dependency.
+Should this list be maintained by the client or the dependency?
+
+What format of dependency specification should be used in the CPF?
+Do we need to support multiple formats for multiple package manager?
 
 
 Ideas for automated compatibility determination
@@ -63,6 +70,4 @@ Case 1: -> Not the case if tests change in any of the version increments.
 
 If tests do not change between versions, then compatibility is transitive.
 (If tests of A and B are the same, C will pass also the tests of A if it passes the tests of B)
-
-
 

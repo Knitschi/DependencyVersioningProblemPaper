@@ -2,16 +2,12 @@
 include(cpfInitPackageProject)
 include(cpfAddFilePackage)
 
-cpfInitPackageProject()
+cpfInitPackageProject(LANGUAGES NONE)
 
 set(files
-	Clang-shared-debug.config.cmake
-	Clang-static-release.config.cmake
 	cpfCIBuildConfigurations.json
-	Gcc-shared-debug.config.cmake
-	README.rst
-	VS2017-shared.config.cmake
-	VS2017-static.config.cmake
+	Default.config.cmake
+	EmptyToolchain.cmake
 )
 
 cpfAddFilePackage(

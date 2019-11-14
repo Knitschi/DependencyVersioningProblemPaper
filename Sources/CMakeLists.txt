@@ -3,7 +3,10 @@
 include("${CMAKE_SOURCE_DIR}/CPFCMake/cpfInitCIProject.cmake")
 cmake_minimum_required(VERSION ${CPF_MINIMUM_CMAKE_VERSION})
 
-project(DependencyVersioningProblemPaperBuildProject)
+project(
+	DependencyVersioningProblemPaperBuildProject
+	LANGUAGES NONE
+	)
 
 cpfAddPackages(
 	GLOBAL_FILES ../README.md ../LICENSE

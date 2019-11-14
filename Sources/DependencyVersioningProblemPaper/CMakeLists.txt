@@ -5,7 +5,7 @@
 include(cpfInitPackageProject)
 include(cpfAddSphinxPackage)
 
-cpfInitPackageProject()
+cpfInitPackageProject(LANGUAGES NONE)
 
 file(GLOB_RECURSE sources RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" CONFIGURE_DEPENDS "*")
 

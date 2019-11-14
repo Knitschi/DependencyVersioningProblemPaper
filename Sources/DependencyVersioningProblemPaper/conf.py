@@ -57,7 +57,6 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
     'sphinx.ext.graphviz',
-    'cmake',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -83,7 +82,7 @@ master_doc = 'index'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['CPFCMake/*', 'CPFBuildScripts/*', 'CIBuildConfigurations/*']
+#exclude_patterns = ['CPFCMake/*', 'CPFBuildScripts/*', 'CIBuildConfigurations/*']
 
 # The name of the Pygments (syntax highlighting) style to use.
 #pygments_style = 'colors.CMakeTemplateStyle'
@@ -128,10 +127,10 @@ htmlhelp_basename = project
 
 # rst_epilog = '.. |my_conf_val| replace:: %s' % release
 
-#rst_prolog = """
-#.. |release| replace:: {0}
-#.. |project| replace:: {1}
-#""".format(release, project)
+rst_prolog = """
+.. |release| replace:: {0}
+.. |project| replace:: {1}
+""".format(release, project)
 
 
 # Theme options are theme-specific and customize the look and feel of a theme

@@ -1,0 +1,7 @@
+[
+    {
+        "ConfigName" : "Ninja",
+        "BuildSlaveLabel" : "Debian-8.9-0.0.0",
+        "CompilerConfig" : ""
+    }
+]

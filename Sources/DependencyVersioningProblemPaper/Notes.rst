@@ -12,6 +12,27 @@ Should this list be maintained by the client or the dependency?
 What format of dependency specification should be used in the CPF?
 Do we need to support multiple formats for multiple package manager?
 
+Answers
+-------
+
+* It looks like one vcpkg instance can only have one version of a dependency. There seems to be
+no mechanism for handling compatible versions. 
+
+* Conan allows to specify ranges of depended on versions, which but it does not work for custom version formats.
+However version specification expressions can be "ored" and I should check if that can be used to define a list
+of allowed versions.
+https://docs.conan.io/en/latest/versioning/version_ranges.html
+Conan does not compute a "joint" compatibility, it will use the version from the most down-stream requirement.
+It should be possible though to optian all requirements using conan and implement that functionality.
+Alternatively one could try to convince the conan guys to implement it :).
+
+
+Questions for Conan
+===================
+
+* How does configuration information get from the profile files in ~/.conan/profiles/
+into the cmake project? Must be via conanbuildinfo.cmake
+
 
 Ideas for automated compatibility determination
 ===============================================

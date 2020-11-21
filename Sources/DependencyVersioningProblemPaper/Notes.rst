@@ -15,10 +15,10 @@ Do we need to support multiple formats for multiple package manager?
 Answers
 -------
 
-* It looks like one vcpkg instance can only have one version of a dependency. There seems to be
-no mechanism for handling compatible versions. 
+It looks like one vcpkg instance can only have one version of a dependency. There seems to be
+no mechanism for handling compatible versions.
 
-* Conan allows to specify ranges of depended on versions, which but it does not work for custom version formats.
+Conan allows to specify ranges of depended on versions, which but it does not work for custom version formats.
 However version specification expressions can be "ored" and I should check if that can be used to define a list
 of allowed versions.
 https://docs.conan.io/en/latest/versioning/version_ranges.html
@@ -27,10 +27,11 @@ It should be possible though to optian all requirements using conan and implemen
 Alternatively one could try to convince the conan guys to implement it :).
 
 
+
 Questions for Conan
 ===================
 
-* How does configuration information get from the profile files in ~/.conan/profiles/
+How does configuration information get from the profile files in ~/.conan/profiles/
 into the cmake project? Must be via conanbuildinfo.cmake
 
 
@@ -84,9 +85,12 @@ Is compatibility transitive?
 ============================
 
 Case 1: -> Not the case if tests change in any of the version increments.
-    * A has function that takes 10 seconds and test requires 15 seconds.
-    * B improves performance to 5 seconds and changes test to require 7 seconds.
-    * C makes any other unrelated compatible change.
+
+    A has function that takes 10 seconds and test requires 15 seconds.
+
+    B improves performance to 5 seconds and changes test to require 7 seconds.
+
+    C makes any other unrelated compatible change.
     -> A will not pass the tests of C.
 
 If tests do not change between versions, then compatibility is transitive.

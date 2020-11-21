@@ -4,3 +4,9 @@
 /Configuration
 /Generated
 .vscode/settings.json
+/install
+/2_GetDependencies.py
+/3_Generate.py
+/4_Make.py
+/.vs
+/.vscode

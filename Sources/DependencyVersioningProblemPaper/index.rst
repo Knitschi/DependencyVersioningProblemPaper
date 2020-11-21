@@ -18,5 +18,7 @@ Index
 
   Problem
   Solution
+  Notes
   References
+
 

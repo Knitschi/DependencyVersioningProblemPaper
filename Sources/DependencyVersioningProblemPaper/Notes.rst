@@ -1,3 +1,5 @@
+
+
 How do Conan or vcpkg handle compatibility schemes?
 ===================================================
 
@@ -22,7 +24,7 @@ Conan allows to specify ranges of depended on versions, which but it does not wo
 However version specification expressions can be "ored" and I should check if that can be used to define a list
 of allowed versions.
 https://docs.conan.io/en/latest/versioning/version_ranges.html
-Conan does not compute a "joint" compatibility, it will use the version from the most down-stream requirement.
+Conan does not compute a *joint* compatibility, it will use the version from the most down-stream requirement.
 It should be possible though to optian all requirements using conan and implement that functionality.
 Alternatively one could try to convince the conan guys to implement it :).
 
@@ -95,4 +97,5 @@ Case 1: -> Not the case if tests change in any of the version increments.
 
 If tests do not change between versions, then compatibility is transitive.
 (If tests of A and B are the same, C will pass also the tests of A if it passes the tests of B)
+
 

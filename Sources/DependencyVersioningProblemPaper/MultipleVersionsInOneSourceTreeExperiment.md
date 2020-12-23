@@ -90,7 +90,7 @@ Data member was added.
 Data member was removed.
     - Copy existing values.
 
-ComplexType (private data and not copiable, passed around by pointer)
+ComplexType (private data and not copyable, passed around by pointer)
 
 Nothing changed.
     - reinterpret cast.
@@ -109,7 +109,7 @@ Private data removed.
 Further Work:
 - libC1 should probably provide its own library/libraries for type transformations. How would that be organized?
 - Provide transformation from the last release version and maybe from the last stable release version.
-- Providing these transformation functions may only be feasible for lexical types.
+- Providing these transformation functions may only be feasible for vocabulary types.
 - Private linkage should be used as much as possible.
 
 

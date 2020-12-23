@@ -26,7 +26,7 @@ This article discusses the pros and cons of the all these approaches and explore
 
 
 Index
------
+*****
 
 .. toctree::
   :maxdepth: 1

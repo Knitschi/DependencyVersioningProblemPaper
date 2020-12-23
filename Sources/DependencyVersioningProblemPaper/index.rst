@@ -12,18 +12,15 @@ Abstract
 
 In large software systems, codebases are usually composed of many libraries that form a complex dependency graph.
 Often one library is used by many other libraries which sometimes is called a diamond dependency.
-
-Todo add picture here.
-
 The *Dependency Versioning Problem* arises when one of the libraries in the tree is changed which means that a new version of the library is created.
 In this situation at one of the clients requires the new version of library, while others still require the old version.
 Currently the industry mainly uses 3 different approaches to work around this problem:
 
-#. Make no changes. Do not change components so the problem does not arise.
+#. Make no changes. If the components are not changed, the problem never arises.
 #. Semantic Versioning. Libraries define multiple versions of a dependency that they can use. A version must be found that satisfies the requirements of all clients.
 #. Only one Version. All clients are updated to use the new version of the library at the same time.
 
-There is a forth solution that has not been much discussed yet. Allow the library to exist in multiple versions in the dependency tree. This I call the *Coexisting Versions* approach.
+There is a fourth solution that has not been much discussed yet. Allow the library to exist in multiple versions in the dependency tree. This I call the *Coexisting Versions* approach.
 
 This article discusses the pros and cons of the all these approaches and explores how the *Coexisting Versions* can be implemented in a C++ codebase.
 

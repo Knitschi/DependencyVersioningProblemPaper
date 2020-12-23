@@ -11,6 +11,7 @@ Switch submodule directories to one that contains the version.
     git mv Sources/dvpLibC Sources/dvpLibC_1_0_0
     git mv Sources/dvpLibB1 Sources/dvpLibB1_2_0_0
     git mv Sources/dvpLibB2 Sources/dvpLibB2_1_0_0
+    git mv Sources/dvpLibA Sources/dvpLibA_1_0_0
 
 -> Internal packages must not be post-fixed with a version number because they can only occur in one version.
 
@@ -42,7 +43,7 @@ Problems:
 
 
 Operations for globally incrementing the version number of dvpLibC_1_0_0 to dvpLibC_1_1_0
---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 
 This documents what needs to be done to update the version of dvpLibC for all dependencies at the same time.
 
@@ -66,6 +67,8 @@ Add dvpLibC_2_0_0 to the :code:`packages.cmake` file.
 Update the entry in libB1 LINKED_LIBRARIES list.
 
 Update the namespace in libC1_2_0_0 and libB1_2_0_0.
+
+Update the export macros.
 
 Fix compile errors in libA by transforming one type into the other.
 
@@ -105,9 +108,16 @@ Private data removed.
 
 Further Work:
 - libC1 should probably provide its own library/libraries for type transformations. How would that be organized?
-- Is there a way how the renames of the namespaces can be prevented and be replaced with macros?
-    - How can the macros be correctly defined in a client project that uses multiple versions?
-        - Maybe include files that define the macro just before the macro is used?
+- Provide transformation from the last release version and maybe from the last stable release version.
+- Providing these transformation functions may only be feasible for lexical types.
+- Private linkage should be used as much as possible.
+
+
+Problems with CPF
+.................
+
+Export macros need to contain the version number. So maybe they need to be derived from the library name.
+The filename should stay the same though.
 
 
 

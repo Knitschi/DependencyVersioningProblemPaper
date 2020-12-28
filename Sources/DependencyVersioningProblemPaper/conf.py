@@ -29,6 +29,7 @@ sys.path.insert(0, os.path.abspath('./_themes'))
 extensions = [
     'sphinx.ext.todo',
     'sphinx_rtd_theme',
+    'sphinx.ext.graphviz',
 ]
 
 # The short X.Y version.
@@ -115,5 +116,8 @@ html_last_updated_fmt = '%b %d, %Y'
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 html_show_sphinx = False
+
+# -- GraphViz configuration ----------------------------------
+graphviz_output_format = 'svg'
 
 

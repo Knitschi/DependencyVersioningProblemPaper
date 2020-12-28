@@ -34,7 +34,7 @@ Index
   Problem
   CommonSolutionsAndStaticGraph
   OnlyOneVersion
-  SemanticVersioning
+  CompatibleVersions
   Implementation
   Conclusions
   References

@@ -7,7 +7,7 @@ In practice there are currently three ways to solve the *Dependency Versioning P
 
 #. Static dependency graph. If the components are never changed and updated, the problem never arises.
 #. Only one Version. All clients are updated to use the new version of the library at the same time.
-#. Semantic Versioning. Libraries define multiple versions of a dependency that they can use. A version must be found that satisfies the requirements of all clients.
+#. Compatible Versions. Libraries define multiple versions of a dependency that they can use. A version must be found that satisfies the requirements of all clients.
  
  
 Static dependency graph

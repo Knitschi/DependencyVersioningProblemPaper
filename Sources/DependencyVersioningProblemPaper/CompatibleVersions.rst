@@ -67,11 +67,11 @@ a new major version of ``libC``. Then we are back to square one where we need to
 The problem of finding combinations of versions that do not lead to requirement conflicts is sometimes called *Dependency Hell*.
 
 In practice the *Compatible Versions* approach is used by most open source libraries that are found in the Linux eco-system. 
-Here the system package managers manually curate a dependency graph that resolves remaining version conflicts. The same approach is used
+Here the maintainer system package managers manually curate a dependency graph for which they resolve remaining version conflicts. The same approach is used
 by the vcpkg package manager.
 
 
-.. _ABI Compliance Checker: https://lvc.github.io/abi-compliance-checker/"
+.. _ABI Compliance Checker: "https://lvc.github.io/abi-compliance-checker/"
 
 
 

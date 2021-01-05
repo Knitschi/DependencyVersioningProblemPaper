@@ -35,5 +35,5 @@ in the book `Software Engineering at Google`_.
 
 
 
-.. _Software Engineering at Google: https://www.oreilly.com/library/view/software-engineering-at/9781492082781/"
+.. _Software Engineering at Google: "https://www.oreilly.com/library/view/software-engineering-at/9781492082781/"
 

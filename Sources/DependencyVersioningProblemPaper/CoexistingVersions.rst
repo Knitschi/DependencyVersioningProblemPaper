@@ -2,9 +2,9 @@
 Coexisting Versions
 -------------------
 
-The solutions to the *Dependency Versioning Problem* that were discussed in the previous chapters all have some major drawbacks
-which prevent them from scaling to support the global codebase. There is a fourth solution though that is currently not widely used,
-but which does not suffer from the problems of the usual solutions. 
+The solutions to the *dependency versioning problem* that were discussed in the previous chapters all have some major drawbacks
+which prevent them from scaling to support the global heterogeneously maintained codebase. There is a fourth solution though that is currently not widely used,
+but which does not suffer from these problems. 
 
 Why not allow multiple versions of a dependency to coexist in the dependency graph?
 
@@ -34,7 +34,7 @@ into the mangled names of the linked binaries to resolve ambiguous names.
 In the C++ ecosystem, having one dependency in multiple versions in a dependency graph is not possible by default. It causes problems due to
 ambiguous names during compilation, linking and in makefiles.
 
-In the next chapter I create an example C++ project that tries to overcome these problems in order to arrive at an design that allows
+In the next chapter I create an CMake based example C++ project that tries to overcome these problems in order to arrive at an design that allows
 multiple versions of one library to exist in a single dependency graph.
 
 

@@ -1,6 +1,5 @@
 
 
-
 *Coexisting Versions* as a Solution to the Dependency Versioning Problem in C++
 ###############################################################################
 
@@ -22,22 +21,29 @@ Currently the industry mainly uses 3 different approaches to work around this pr
 
 There is a fourth solution that has not been much discussed yet. Allow the library to exist in multiple versions in the dependency tree. This I call the *Coexisting Versions* approach.
 
-This article discusses the advantages and disadvantages of these approaches and explores how the *Coexisting Versions* can be implemented in a C++ codebase.
+This article discusses the advantages and disadvantages of these approaches and explores how the *coexisting versions* approach can be implemented in a C++ codebase.
 
 
 Index
 *****
 
 .. toctree::
-  :maxdepth: 2
+	:maxdepth: 2
 
-  Problem
-  CommonSolutionsAndStaticGraph
-  OnlyOneVersion
-  CompatibleVersions
-  CoexistingVersions
-  Implementation
-  Conclusions
-  References
+	DependenciesInComplexCodebases
+	DiamondDependencyProblem
+	SolutionsOverview
+	StaticDependencyGraph
+	OnlyOneVersion
+	CompatibleVersions
+	CoexistingVersions
+	ImplementationOverview
+	ExampleProject
+	AmbiguousTargetNames
+	AmbiguousOutputFilenames
+	AmbiguousIncludes
+	AmbiguousIdentifierNames
+	Conclusions
+	References
 
 

@@ -7,3 +7,7 @@ In my opinion allowing multiple versions of one dependency is the only possible 
 orchestration of the involved dependencies is possible. It would remove the need for compatibility schemes
 of questionable correctness that additionally put a great maintenance burden on library developers.
 
+**TODO**
+
+* Is it possible to implement this with C++ modules?
+* How would this work with Conan package manager.
